@@ -1,0 +1,21 @@
+# Diuji di Google Colab (Python 3.13, torch 2.11.0+cu130), 27-28 Okt 2026.
+# Di Colab, torch/torchvision/numpy/pandas/scikit-learn/matplotlib sudah tersedia.
+medmnist==3.0.2
+pydicom>=3.0,<4
+nibabel
+torchmetrics>=1.4
+pycocotools
+onnx
+onnxruntime
+onnxscript
+gradio
+torch
+torchvision
+numpy
+pandas
+scikit-learn
+scipy
+matplotlib
+pillow
+requests
+certifi

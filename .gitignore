@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+# data, bobot, dan hasil tidak pernah di-commit
+data/
+data_lokal/
+dataset/
+hasil/
+*.npz
+*.zip
+*.tar.gz
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.dcm
+*.nii
+*.nii.gz
+.env
+kaggle.json
+.DS_Store
