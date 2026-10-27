@@ -1,5 +1,7 @@
 # Visi Komputer untuk Kesehatan — Kode Buku
 
+<p align="center"><img src="docs/gambar/sampul.jpg" alt="Sampul buku Visi Komputer untuk Kesehatan" width="320"></p>
+
 Kode pendamping buku **_Visi Komputer untuk Kesehatan: Klasifikasi, Regresi, Deteksi, dan Segmentasi Citra Medis dengan Python_**.
 
 **Penulis:**
@@ -9,7 +11,7 @@ Kode pendamping buku **_Visi Komputer untuk Kesehatan: Klasifikasi, Regresi, Det
 4. Sunardi (Universitas Muhammadiyah Yogyakarta)
 5. Liliek Triyono (Politeknik Negeri Semarang)
 
-> **English summary.** These are the companion Google Colab notebooks for the Indonesian textbook *Computer Vision for Health*. The book covers classification, regression, detection and segmentation of medical images in Python/PyTorch, and every notebook uses public datasets that are downloaded automatically into your Google Drive. The notebooks are for **education and research only**. They are **not a medical device** and must not be used for clinical decisions. Code licence: MIT (proposed). Dataset licences vary; see the table below. DermaMNIST/HAM10000 is **CC BY-NC 4.0**, which means non-commercial use only.
+> **English summary.** These are the companion Google Colab notebooks for the Indonesian textbook *Computer Vision for Health*. The book covers classification, regression, detection and segmentation of medical images in Python/PyTorch, and every notebook uses public datasets that are downloaded automatically into your Google Drive. The notebooks are for **education and research only**. They are **not a medical device** and must not be used for clinical decisions. Code licence: MIT. Book text: CC BY-NC-SA 4.0. Dataset licences vary; see the table below. DermaMNIST/HAM10000 is **CC BY-NC 4.0**, which means non-commercial use only.
 
 > ⚠️ **Penafian.** Repositori ini hanya untuk pendidikan dan penelitian. Model di dalamnya **bukan alat kesehatan** dan **tidak boleh dipakai untuk keputusan klinis**. Model ini juga belum memiliki izin edar (lihat KMK HK.01.07/MENKES/951/2026). Semua data yang dipakai adalah dataset publik, tanpa data pasien yang dapat dikenali.
 
@@ -19,9 +21,10 @@ Kode pendamping buku **_Visi Komputer untuk Kesehatan: Klasifikasi, Regresi, Det
 |---|---|
 | `notebooks/` | 14 notebook Colab: `00_siapkan_dataset.ipynb` dan `bab01`–`bab13`. Keluaran sel sudah dihapus agar repositori ringan. |
 | `generator/` | Skrip Python pembangun notebook (`buat_babNN_ipynb.py`), sel standar Drive + unduh dataset (`sel_standar.py`), pola bersama (`pola_bab.py`), dan metadata publik Zenodo (`zenodo/`). Bagian ini opsional; pembaca cukup memakai `notebooks/`. |
+| `docs/gambar/` | Sampul buku dan contoh gambar hasil untuk README. |
 | `requirements.txt` | Paket tambahan untuk menjalankan notebook di luar Colab. |
 
-**Catatan Bab 8.** `notebooks/bab08.ipynb` adalah versi 2 notebook Bab 8 (di naskah kerja bernama `bab08_v2.ipynb`). Isi ilmunya sama, tetapi biayanya jauh lebih ringan di T4. Versi 1 tidak disertakan karena terlalu lambat.
+**Catatan Bab 8.** `notebooks/bab08.ipynb` adalah versi 2 notebook Bab 8; naskah buku versi 1.0 juga merujuk nama `bab08.ipynb`. Isi ilmunya sama, tetapi biayanya jauh lebih ringan di T4. Versi 1 tidak disertakan karena terlalu lambat.
 
 ## Notebook per bab
 
@@ -59,6 +62,16 @@ Total semua notebook bab sekitar 2 jam (7.519 s).
 
 **Keamanan.** Tidak ada token, kunci API, atau kata sandi di repositori ini. Dataset yang memerlukan akun (misalnya Kaggle) tidak dipakai. Bila Anda tetap memakainya, simpan token di **Colab Secrets**, jangan di notebook.
 
+## Contoh hasil
+
+Semua gambar berikut adalah keluaran asli run notebook di Google Colab T4 (27–28 Oktober 2026), diperkecil untuk README.
+
+| | |
+|---|---|
+| <img src="docs/gambar/bab03_kurva_latih.png" width="420"><br>**Bab 3.** Kurva latih dan validasi klasifikasi BloodMNIST (MedMNIST v2, CC BY 4.0). | <img src="docs/gambar/bab08_bccd_kotak.jpg" width="420"><br>**Bab 8.** Deteksi sel darah: anotasi (atas) dibandingkan dengan prediksi Faster R-CNN (bawah), dataset BCCD (repositori MIT). |
+| <img src="docs/gambar/bab09_hc18_segmentasi.jpg" width="420"><br>**Bab 9.** Tumpang-susun mask segmentasi kepala janin pada citra USG, dataset HC18 (CC BY 4.0). | <img src="docs/gambar/bab11_decision_curve.png" width="420"><br>**Bab 11.** Kurva keputusan (*decision curve analysis*) model PneumoniaMNIST (MedMNIST v2, CC BY 4.0). |
+| <img src="docs/gambar/bab12_gradcam_shortcut.png" width="420"><br>**Bab 12.** Grad-CAM model bersih dibandingkan dengan model yang dilatih dengan penanda buatan (*shortcut*), PneumoniaMNIST (MedMNIST v2, CC BY 4.0). | |
+
 ## Dataset dan lisensi
 
 Repositori ini **tidak** menyertakan dataset, bobot model, atau hasil. Semua diunduh dari sumber resmi saat dijalankan. Patuhi lisensi masing-masing dan cantumkan atribusinya.
@@ -85,4 +98,4 @@ Bila memakai dataset, sitasi juga makalah dataset di atas.
 
 ## Lisensi
 
-Kode di repositori ini menggunakan lisensi **MIT** (lihat `LICENSE`). **Lisensi ini masih usulan dan menunggu konfirmasi penulis.** Lisensi MIT hanya berlaku untuk kode, tidak untuk dataset, naskah buku, atau gambar dari dataset.
+Kode di repositori ini menggunakan lisensi **MIT** (lihat `LICENSE`). Naskah buku dilisensikan dengan CC BY-NC-SA 4.0. Lisensi MIT hanya berlaku untuk kode, tidak untuk dataset, naskah buku, atau gambar dari dataset.
